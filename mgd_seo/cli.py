@@ -9,7 +9,7 @@ from .report import markdown
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description="MGD-SEO 0.1.0 – lokale SEO-Prüfung")
+    parser = argparse.ArgumentParser(description="MGD-SEO 0.2.0 – lokale SEO-Prüfung")
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("doctor", help="Verfügbarkeit ohne Installation prüfen")
     offline = commands.add_parser("html", help="Lokale HTML-Datei ohne Netzwerk prüfen")
@@ -23,7 +23,7 @@ def main(argv=None):
         command.add_argument("--output", type=Path, help="Neue Datei; bestehende Dateien werden nicht überschrieben")
     args = parser.parse_args(argv)
     if args.command == "doctor":
-        print("MGD-SEO 0.1.0: Python-Kern verfügbar; keine Zusatzpakete erforderlich.")
+        print("MGD-SEO 0.2.0: Python-Kern verfügbar; keine Zusatzpakete erforderlich.")
         print("JavaScript, Scrapling-MCP, Lighthouse und Search Console: nicht durch diesen Befehl geprüft.")
         return 0
     try:

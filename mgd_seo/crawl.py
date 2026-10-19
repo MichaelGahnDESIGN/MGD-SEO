@@ -83,7 +83,7 @@ def crawl(url, max_pages=10, fetcher=None):
 
 
 def new_report(mode):
-    return {"schema_version": "0.1.0", "tool_version": "0.1.0", "mode": mode,
+    return {"schema_version": "0.1.0", "tool_version": "0.2.0", "mode": mode,
             "checked_at": datetime.now(timezone.utc).isoformat(), "pages": [],
             "errors": [], "skipped": [], "truncated": False,
             "limitations": ["Nur Quell-HTML, kein JavaScript und keine vollständige Website-Abdeckung.",

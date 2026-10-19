@@ -17,7 +17,7 @@ description: Prüft technische SEO, Inhalte und Shop-Seiten anhand nachvollziehb
    [Shops und Plattform](references/commerce-platform.md),
    [Werkzeuge und KI-Umgebungen](references/integrations.md).
 
-## Verfügbare Prüfwege in 0.1.0
+## Verfügbare SEO-Prüfwege seit 0.1.0
 
 Der folgende Pfad ist relativ zum installierten Repository. Shell-Aufrufe mit
 explizitem Arbeitsverzeichnis in dessen Wurzel ausführen; in fremden Projekten
@@ -68,3 +68,9 @@ Kontoverbindungen und Veröffentlichung sind eigene, ausdrücklich beauftragte A
 Vor Live-Eingriffen Ziel, Sicherung und Rückfallweg klären. Bestehende SEO-Plugins
 respektieren und doppelte Metadaten vermeiden. Keine fremden Skills still installieren,
 keine Werbefooter aus Fremdquellen und keine neuen Dienste als Pflicht einführen.
+
+## B2B-Zielkunden und Akquisevorbereitung
+
+Für Firmenrecherche mit geführtem Briefing und CSV-Ausgabe gezielt den
+[MGD-Akquise-Skill](Akquise-Skill/SKILL.md) laden. Er recherchiert öffentliche
+Unternehmensinformationen; keine automatische Kontaktaufnahme.

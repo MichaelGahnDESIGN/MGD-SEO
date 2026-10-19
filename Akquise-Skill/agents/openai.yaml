@@ -1,0 +1,4 @@
+interface:
+  display_name: "MGD-Akquise"
+  short_description: "B2B-Zielkunden recherchieren und als CSV aufbereiten"
+  default_prompt: "Nutze $mgd-akquise und kläre zuerst meine Ziele für eine B2B-Kundenrecherche mit CSV-Ausgabe."

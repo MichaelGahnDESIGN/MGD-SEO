@@ -41,3 +41,11 @@ und Datenlöschung ergänzen.
 Python-Standardbibliothek hält 0.1.0 ohne Installation benutzbar und passt zu einer
 späteren optionalen Scrapling-Anbindung. HTML-Prüfregeln bleiben unabhängig von
 Browser, MCP und Shop. Kein kopierter Fremd-App-Code.
+
+## Erweiterung 0.2.0
+
+`Akquise-Skill/` enthält einen eigenständigen, datenarmen B2B-Rechercheworkflow
+und Offline-CSV-Export. Der Assistent recherchiert; das Skript prüft Format und
+exportiert. Keine eingebauten Versand-/CRM-Zugriffe. `docs/wiki/` ist die lokale
+Wiki-Quelle, `tools/export_wiki.py` bereitet einen neuen Ordner ohne Upload vor.
+SEO-Berichtsschema bleibt 0.1.0, Werkzeugversion 0.2.0.

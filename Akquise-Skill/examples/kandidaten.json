@@ -1,0 +1,32 @@
+{
+  "columns": [
+    "unternehmen",
+    "website",
+    "branche",
+    "ort",
+    "passungsgrund",
+    "beobachtung",
+    "quelle_url",
+    "geprueft_am",
+    "recherche_status",
+    "kontaktfreigabe",
+    "telefon_zentrale",
+    "quellen_details"
+  ],
+  "leads": [
+    {
+      "unternehmen": "Beispielbetrieb für Gebäudetechnik GmbH",
+      "website": "https://gebaeudetechnik.example/",
+      "branche": "Gebäudetechnik",
+      "ort": "Musterstadt",
+      "passungsgrund": "Synthetisches Beispiel: angebotene Zielbranche erfüllt",
+      "beobachtung": "Nur Beispieldaten, keine reale Recherche",
+      "quelle_url": "https://gebaeudetechnik.example/leistungen",
+      "geprueft_am": "2026-10-20",
+      "recherche_status": "nicht verifiziert",
+      "kontaktfreigabe": "nicht geprüft",
+      "telefon_zentrale": "",
+      "quellen_details": "Synthetische Quelle; nicht öffentlich recherchiert"
+    }
+  ]
+}

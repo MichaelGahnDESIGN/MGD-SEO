@@ -29,3 +29,12 @@ Systemresolver. Die HTML-Extraktion ist konservativ, keine vollständige Browser
 Interpretation. Verdächtige Befunde mit minimalen, nicht vertraulichen Beispielen
 privat an den Maintainer melden; keine Secrets oder Kundenberichte in öffentliche
 Issues. Kein Security-Label als Zertifizierung verwenden.
+
+## Akquise und CSV seit 0.2.0
+
+Nur auftragsbezogene öffentliche Firmenrecherche. Personenbezogene Felder brauchen
+einen passenden Verarbeitungsrahmen; Öffentlichkeit ist keine Werbeeinwilligung.
+Keine privaten Kontakte, erratenen E-Mails, Nachrichten oder CRM-Übertragung.
+Der CSV-Helfer prüft Struktur, Pflichtdaten und Dubletten, nicht deren Wahrheit.
+Formelverdächtige Felder und Überschriften werden als Text markiert, UTF-8-BOM
+ist Standard. Kontaktfreigabe bleibt nicht geprüft. Echte Listen ins Kundenprojekt.

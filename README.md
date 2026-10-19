@@ -9,7 +9,7 @@
 Ein deutschsprachiger Skill für Codex und Claude mit einem lokal ausführbaren
 Python-Prüfkern. Von Michael Gahn DESIGN.
 
-**Version 0.1.0 · Pre-Alpha · lokal entwickelt · nicht veröffentlicht**
+**Version 0.2.0 · Pre-Alpha · lokal entwickelt · nicht veröffentlicht**
 
 ## Was schon funktioniert
 
@@ -23,6 +23,16 @@ Python-Prüfkern. Von Michael Gahn DESIGN.
 Sitemap-Inhaltsprüfung, Linkzielprüfung, Search-Console-Verbindung oder Shopänderung.
 Scrapling, Lighthouse und weitere MCPs sind optionale Integrationen für spätere Stufen,
 keine still installierten Bestandteile dieser Version.
+
+## B2B-Akquise-Assistent
+
+Neu: [MGD-Akquise-Skill](Akquise-Skill/README.md) mit Zielkunden-Briefing, öffentlicher
+Firmenrecherche und CSV-Ausgabe mit Wunschspalten, Quellen und Prüfdatum. Keine
+automatische Kontaktaufnahme. Der Exporthelfer arbeitet ohne Zusatzpakete.
+
+## Wiki
+
+Das vollständige [Wiki](docs/wiki/Home.md) liegt lokal vor; noch nicht auf GitHub veröffentlicht.
 
 ## Sofort lokal verwenden
 
@@ -38,7 +48,7 @@ python3 -B -m mgd_seo crawl https://DEINE-DOMAIN.example/ --max-pages 10
 Die letzte URL durch eine autorisierte öffentliche Zielseite ersetzen.
 Maximal 50 Seitenkandidaten, 120 Sekunden Abrufbudget und 2 MB je Antwort.
 DNS-Auflösung unterliegt zusätzlich den System-Resolver-Zeiten; kein harter
-Prozesszeitwächter in 0.1.0. Seiten mit Queryparametern werden nicht automatisch verfolgt.
+Prozesszeitwächter. Seiten mit Queryparametern werden nicht automatisch verfolgt.
 Ein Start mit Query ist ausdrücklich möglich. Maximal 5 Weiterleitungen;
 HTTP/HTTPS und Standardports 80/443. Keine parallelen Abrufe, mindestens 0,5 Sekunden Abstand.
 Cross-Origin-Weiterleitungen werden auch bei www/HTTPS-Wechsel gestoppt.
@@ -64,7 +74,7 @@ Teilberichte bleiben bei Crawl-Fehlern verfügbar.
 - **Ohne Installation:** `SKILL.md` und bei Bedarf die verlinkten Referenzen als
   Projektmaterial bereitstellen. Chat ohne Python-/Werkzeugzugriff kann Dateien
   auswerten, aber keinen lokalen Crawler starten.
-- **Cowork und Web-Anschlüsse:** Eigene Pakete und jeweilige Abnahme sind für 0.2.0
+- **Cowork und Web-Anschlüsse:** Eigene Pakete und jeweilige Abnahme sind für 0.3.0
   geplant. Ein lokaler Skill-Ordner ist keine automatische Cowork-Installation.
 
 Es wurde mit dieser Entwicklung nichts global installiert oder an bestehenden
