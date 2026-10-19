@@ -1,0 +1,4 @@
+interface:
+  display_name: "MGD-SEO"
+  short_description: "SEO prüfen und belegte Maßnahmen verständlich planen"
+  default_prompt: "Nutze $mgd-seo für eine nachvollziehbare SEO-Prüfung meines Projekts."
