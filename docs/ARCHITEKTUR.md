@@ -46,6 +46,5 @@ Browser, MCP und Shop. Kein kopierter Fremd-App-Code.
 
 `Akquise-Skill/` enthält einen eigenständigen, datenarmen B2B-Rechercheworkflow
 und Offline-CSV-Export. Der Assistent recherchiert; das Skript prüft Format und
-exportiert. Keine eingebauten Versand-/CRM-Zugriffe. `docs/wiki/` ist die lokale
-Wiki-Quelle, `tools/export_wiki.py` bereitet einen neuen Ordner ohne Upload vor.
+exportiert. Keine eingebauten Versand-/CRM-Zugriffe. Das Handbuch wird ausschließlich im [GitHub-Wiki](https://github.com/MichaelGahnDESIGN/MGD-SEO/wiki) gepflegt.
 SEO-Berichtsschema bleibt 0.1.0, Werkzeugversion 0.2.0.

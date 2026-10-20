@@ -9,7 +9,7 @@
 Ein deutschsprachiger Skill für Codex und Claude mit einem lokal ausführbaren
 Python-Prüfkern. Von Michael Gahn DESIGN.
 
-**Version 0.2.0 · Pre-Alpha · Quellcode auf GitHub · noch kein Release**
+**Version 0.2.0 · Pre-Alpha · [Pre-Release v0.2.0](https://github.com/MichaelGahnDESIGN/MGD-SEO/releases/tag/v0.2.0)**
 
 ## Was schon funktioniert
 
@@ -32,8 +32,7 @@ automatische Kontaktaufnahme. Der Exporthelfer arbeitet ohne Zusatzpakete.
 
 ## Wiki
 
-Das vollständige [Wiki](docs/wiki/Home.md) ist im Repository enthalten.
-Die Veröffentlichung als separates GitHub-Wiki steht noch aus.
+Das vollständige [GitHub-Wiki](https://github.com/MichaelGahnDESIGN/MGD-SEO/wiki) enthält das Handbuch und wird getrennt vom Quellcode gepflegt.
 
 ## Sofort lokal verwenden
 
