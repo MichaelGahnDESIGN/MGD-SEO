@@ -9,3 +9,6 @@ reports/
 dist/
 *.egg-info/
 .DS_Store
+
+# Automatische Synology-Metadaten bleiben lokal.
+@eaDir/

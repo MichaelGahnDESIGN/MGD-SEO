@@ -7,8 +7,9 @@ HTTP/HTTPS. Laufzeit ohne Fremdpakete. Unter Windows gegebenenfalls `py -3` anst
 von `python3` verwenden. Diese Befehlsvariante wurde nicht gesondert unter Windows getestet.
 
 Das vollständige Repository wird benötigt: nur `SKILL.md` kopieren reicht für den
-Python-Kern nicht. Noch kein GitHub-Remote: keine vermeintlich vorhandene Download-
-oder Release-Adresse verwenden. Die lokale Arbeitskopie ist der aktuelle Lieferstand.
+Python-Kern nicht. Quellcode: https://github.com/MichaelGahnDESIGN/MGD-SEO
+Noch kein veröffentlichtes Release oder Installationspaket. Die vollständige
+Arbeitskopie von main ist der aktuelle Lieferstand.
 
 ## Direktbetrieb
 

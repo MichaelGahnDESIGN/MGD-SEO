@@ -3,8 +3,7 @@
 **Ist MGD-SEO kostenlos?** Der eigene Kern steht unter MIT und benötigt keine
 kostenpflichtige API. KI-Nutzung und optionale Dienste können Kosten verursachen.
 
-**Ist das schon auf GitHub?** Nein. Projekt und Wiki sind lokal vorbereitet;
-Veröffentlichung ist ein eigener Auftrag.
+**Ist das schon auf GitHub?** Ja: https://github.com/MichaelGahnDESIGN/MGD-SEO. Die Wiki-Quelldateien liegen im Repository; ein separates GitHub-Wiki ist noch nicht veröffentlicht.
 
 **Kann ich es in jedem Chat verwenden?** Die Texte sind wiederverwendbar. Lokale
 Programme und MCPs brauchen passende Werkzeuge und eine eigene Client-Einrichtung.

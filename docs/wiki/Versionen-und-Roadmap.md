@@ -18,4 +18,4 @@ bleiben historische Nachweise, keine Behauptung über den aktuellen Funktionsumf
 
 Keine Termine oder Erfolgsgarantien aus der Roadmap ableiten. Vor Freigabe:
 Quellen/Lizenzen prüfen, Tests und Client-Abnahme, Secret-Prüfung, Nutzeranleitung,
-Rollback und ausdrückliche Veröffentlichungsfreigabe. Noch kein Remote/Release.
+Rollback und ausdrückliche Veröffentlichungsfreigabe. Quellcode-Repository vorhanden; noch kein veröffentlichtes Release.

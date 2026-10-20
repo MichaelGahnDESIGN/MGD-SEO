@@ -17,8 +17,8 @@ keine Projektdateien, keinen Netzwerkzugriff und keinen Push. Links vorher prüf
 
 ## Veröffentlichung als gesonderter Auftrag
 
-Derzeit ist kein Remote eingerichtet. Vor Veröffentlichung Repositoryidentität,
-Sichtbarkeit, Zugriffsrechte und Freigabe klären. GitHub-Wikis besitzen ein eigenes
+Das Code-Repository ist MichaelGahnDESIGN/MGD-SEO. Vor Wiki-Veröffentlichung
+Ziel, Zugriffsrechte und Freigabe klären. GitHub-Wikis besitzen ein eigenes
 Git-Repository neben dem Code-Repository. Eine erste Wiki-Seite muss gegebenenfalls
 auf GitHub angelegt werden. Erst danach dessen Wiki-Repository beziehen, exportierte
 Seiten vergleichen, Änderungen reviewen und mit eigener Freigabe übertragen.

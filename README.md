@@ -9,7 +9,7 @@
 Ein deutschsprachiger Skill für Codex und Claude mit einem lokal ausführbaren
 Python-Prüfkern. Von Michael Gahn DESIGN.
 
-**Version 0.2.0 · Pre-Alpha · lokal entwickelt · nicht veröffentlicht**
+**Version 0.2.0 · Pre-Alpha · Quellcode auf GitHub · noch kein Release**
 
 ## Was schon funktioniert
 
@@ -32,7 +32,8 @@ automatische Kontaktaufnahme. Der Exporthelfer arbeitet ohne Zusatzpakete.
 
 ## Wiki
 
-Das vollständige [Wiki](docs/wiki/Home.md) liegt lokal vor; noch nicht auf GitHub veröffentlicht.
+Das vollständige [Wiki](docs/wiki/Home.md) ist im Repository enthalten.
+Die Veröffentlichung als separates GitHub-Wiki steht noch aus.
 
 ## Sofort lokal verwenden
 
