@@ -6,7 +6,7 @@
 - Kostenlos: eigener Firecrawl per Docker (Standard, ohne Schlüssel) oder Firecrawl-Cloud mit Gratis-Kontingent.
 - Token sparen: Auswertung bleibt lokal, neues Format `--format compact` (eine Zeile je Befund), Zwischenspeicher `--cache` (24 h).
 - robots.txt und Sperre interner Ziele gelten auch für Firecrawl; Firecrawl-Adresse nur localhost oder api.firecrawl.dev.
-- Anleitung: docs/FIRECRAWL.md. Noch kein Release.
+- Anleitung: docs/FIRECRAWL.md. Pre-Release v0.3.0 mit ZIP und SHA-256-Prüfsumme.
 
 ## 0.2.0 – 20.10.2026 – Pre-Alpha
 

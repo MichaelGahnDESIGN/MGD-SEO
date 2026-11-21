@@ -9,7 +9,7 @@
 Ein deutschsprachiger Skill für Codex und Claude mit einem lokal ausführbaren
 Python-Prüfkern. Von Michael Gahn DESIGN.
 
-**Version 0.3.0 · Pre-Alpha · letztes Release: [Pre-Release v0.2.0](https://github.com/MichaelGahnDESIGN/MGD-SEO/releases/tag/v0.2.0)**
+**Version 0.3.0 · Pre-Alpha · [Pre-Release v0.3.0](https://github.com/MichaelGahnDESIGN/MGD-SEO/releases/tag/v0.3.0)**
 
 ## Was schon funktioniert
 
