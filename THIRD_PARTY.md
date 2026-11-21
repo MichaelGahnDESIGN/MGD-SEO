@@ -19,6 +19,12 @@ https://github.com/MichaelGahnDESIGN/MGD_Prozesse_SKILL
 Entity-/Local-/Alt-Skills sind vor einer direkten Übernahme noch zu klären.
 Die Alt-App enthält geschätzte Ersatzwerte: bewusst nicht übernommen.
 
+## Optional angebunden (nicht mitgeliefert)
+
+- Firecrawl (AGPL-3.0): https://github.com/firecrawl/firecrawl. MGD-SEO ruft nur die HTTP-Schnittstelle
+  `POST /v2/scrape` eines selbst betriebenen oder des Cloud-Dienstes auf. Kein Firecrawl-Code im Repository,
+  kein SDK, keine Pflicht. Geprüft am 21.11.2026.
+
 ## Externe Kandidaten, nicht eingebunden
 
 - Scrapling (BSD-3-Clause): https://github.com/D4Vinci/Scrapling

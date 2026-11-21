@@ -13,7 +13,7 @@ import time
 from dataclasses import dataclass
 from urllib.parse import urljoin, urlsplit, urlunsplit
 
-AGENT = "MGD-SEO/0.2.0"
+AGENT = "MGD-SEO/0.3.0"
 
 class FetchError(ValueError):
     """Ein Abruf wurde begrenzt, abgelehnt oder ist fehlgeschlagen."""
@@ -131,7 +131,7 @@ class Fetcher:
                 key = key.lower()
                 headers[key] = headers[key] + ", " + value if key in headers else value
             if headers.get("content-encoding", "identity").lower() not in ("", "identity"):
-                raise FetchError("Komprimierte Antwort wird in 0.2.0 nicht verarbeitet")
+                raise FetchError("Komprimierte Antwort wird nicht verarbeitet")
             chunks, length = [], 0
             while True:
                 remaining = self.deadline - time.monotonic()

@@ -9,7 +9,7 @@
 Ein deutschsprachiger Skill für Codex und Claude mit einem lokal ausführbaren
 Python-Prüfkern. Von Michael Gahn DESIGN.
 
-**Version 0.2.0 · Pre-Alpha · [Pre-Release v0.2.0](https://github.com/MichaelGahnDESIGN/MGD-SEO/releases/tag/v0.2.0)**
+**Version 0.3.0 · Pre-Alpha · letztes Release: [Pre-Release v0.2.0](https://github.com/MichaelGahnDESIGN/MGD-SEO/releases/tag/v0.2.0)**
 
 ## Was schon funktioniert
 
@@ -18,8 +18,9 @@ Python-Prüfkern. Von Michael Gahn DESIGN.
 - Doppelte Titel innerhalb der Stichprobe erkennen.
 - Ergebnisse mit Zeitstempel, URL, Nachweis, Empfehlung und Grenzen als Markdown/JSON ausgeben.
 - robots.txt beachten; private Netzwerkziele, fremde Redirect-Ursprünge und übergroße Antworten sperren.
+- Neu in 0.3.0: Seiten mit JavaScript über **Firecrawl** prüfen (`render`), kostenlos per eigenem Docker oder Gratis-Kontingent. Kurzbericht `--format compact` spart Tokens. Anleitung: [Firecrawl](docs/FIRECRAWL.md).
 
-**Kein Rankingversprechen und kein erfundener SEO-Score.** Noch keine JavaScript-Ausführung,
+**Kein Rankingversprechen und kein erfundener SEO-Score.** JavaScript nur über das optionale Firecrawl,
 Sitemap-Inhaltsprüfung, Linkzielprüfung, Search-Console-Verbindung oder Shopänderung.
 Scrapling, Lighthouse und weitere MCPs sind optionale Integrationen für spätere Stufen,
 keine still installierten Bestandteile dieser Version.
@@ -43,7 +44,10 @@ Im Projektordner:
 python3 -B -m mgd_seo doctor
 python3 -B -m mgd_seo html tests/fixtures/example.html --url https://example.org/
 python3 -B -m mgd_seo crawl https://DEINE-DOMAIN.example/ --max-pages 10
+python3 -B -m mgd_seo render https://DEINE-DOMAIN.example/ --format compact --cache .tmp/firecrawl
 ```
+
+Der Befehl `render` braucht einen laufenden Firecrawl, siehe [Firecrawl-Anleitung](docs/FIRECRAWL.md).
 
 Die letzte URL durch eine autorisierte öffentliche Zielseite ersetzen.
 Maximal 50 Seitenkandidaten, 120 Sekunden Abrufbudget und 2 MB je Antwort.

@@ -16,23 +16,9 @@ def crawl(url, max_pages=10, fetcher=None):
     report = new_report("crawl")
     report["scope"] = {"start_url": start, "origin": base, "max_pages": max_pages,
                        "javascript": False, "query_urls_followed": False}
-    try:
-        response = fetcher.fetch(base + "/robots.txt", allowed_origin=base)
-        if response.status in (404, 410):
-            lines = []
-        elif response.status == 200:
-            lines = response.text().splitlines()
-        else:
-            raise FetchError(f"robots.txt nicht verlässlich abrufbar (HTTP {response.status})")
-    except FetchError as exc:
-        report["errors"].append({"url": base + "/robots.txt", "message": str(exc)})
+    robots = load_robots(fetcher, base, report)
+    if robots is None:
         return report
-    robots = RobotFileParser()
-    robots.parse(lines)
-    wait = robots.crawl_delay(AGENT) or robots.crawl_delay("*") or 0
-    if hasattr(fetcher, "delay"):
-        fetcher.delay = max(fetcher.delay, wait)
-    report["discovered_sitemaps"] = robots.site_maps() or []
     queue, seen = deque([start]), set()
     # Das Kandidatenlimit begrenzt auch Seiten mit sehr vielen Links.
     while queue and len(seen) < max_pages:
@@ -82,8 +68,30 @@ def crawl(url, max_pages=10, fetcher=None):
     return report
 
 
+def load_robots(fetcher, base, report):
+    """robots.txt lesen; None = nicht verlässlich, dann stoppt die Prüfung."""
+    try:
+        response = fetcher.fetch(base + "/robots.txt", allowed_origin=base)
+        if response.status in (404, 410):
+            lines = []
+        elif response.status == 200:
+            lines = response.text().splitlines()
+        else:
+            raise FetchError(f"robots.txt nicht verlässlich abrufbar (HTTP {response.status})")
+    except FetchError as exc:
+        report["errors"].append({"url": base + "/robots.txt", "message": str(exc)})
+        return None
+    robots = RobotFileParser()
+    robots.parse(lines)
+    wait = robots.crawl_delay(AGENT) or robots.crawl_delay("*") or 0
+    if hasattr(fetcher, "delay"):
+        fetcher.delay = max(fetcher.delay, wait)
+    report["discovered_sitemaps"] = robots.site_maps() or []
+    return robots
+
+
 def new_report(mode):
-    return {"schema_version": "0.1.0", "tool_version": "0.2.0", "mode": mode,
+    return {"schema_version": "0.1.0", "tool_version": "0.3.0", "mode": mode,
             "checked_at": datetime.now(timezone.utc).isoformat(), "pages": [],
             "errors": [], "skipped": [], "truncated": False,
             "limitations": ["Nur Quell-HTML, kein JavaScript und keine vollständige Website-Abdeckung.",

@@ -5,6 +5,7 @@ Stand: Recherche 20.10.2026. Beschreibungen sind keine praktische Integrationsab
 | Werkzeug | Geplanter Zweck | Kosten und Grenze |
 |---|---|---|
 | Python-Kern | HTML-Stichprobe und lokale Dateien | Ohne Fremdpakete; implementiert |
+| Firecrawl | Gerenderte Seiten für `render`, Auswertung lokal | AGPL-3.0, optional; eigener Docker kostenlos oder Cloud-Gratiskontingent mit eigenem Schlüssel; eingebaut seit 0.3.0, siehe [Anleitung](../docs/FIRECRAWL.md) |
 | Scrapling | Gerenderte Inhalte und gezielte Extraktion | BSD-3-Clause, optional; nicht eingebaut |
 | Lighthouse | Lokale Labormessung | Apache-2.0, optional; nicht eingebaut |
 | Playwright MCP | Gezielte Browserkontrolle | Optional; vorhandenes Werkzeug bevorzugen |

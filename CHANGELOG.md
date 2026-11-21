@@ -1,5 +1,13 @@
 # Änderungen
 
+## 0.3.0 – 21.11.2026 – Pre-Alpha, lokal
+
+- Optionale Firecrawl-Anbindung: neuer Befehl `render` prüft gerenderte Seiten (JavaScript).
+- Kostenlos: eigener Firecrawl per Docker (Standard, ohne Schlüssel) oder Firecrawl-Cloud mit Gratis-Kontingent.
+- Token sparen: Auswertung bleibt lokal, neues Format `--format compact` (eine Zeile je Befund), Zwischenspeicher `--cache` (24 h).
+- robots.txt und Sperre interner Ziele gelten auch für Firecrawl; Firecrawl-Adresse nur localhost oder api.firecrawl.dev.
+- Anleitung: docs/FIRECRAWL.md. Noch kein Release.
+
 ## 0.2.0 – 20.10.2026 – Pre-Alpha
 
 - Eigenständiger MGD-Akquise-Skill im Ordner Akquise-Skill mit geführtem B2B-Briefing.
